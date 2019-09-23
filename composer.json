@@ -10,6 +10,12 @@
   ],
   "minimum-stability": "dev",
   "prefer-stable": true,
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/fond-of/payone"
+    }
+  ],
   "require": {
     "php": ">=7.1",
     "spryker/glossary": "^3.7.0",
