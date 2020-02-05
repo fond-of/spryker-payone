@@ -9,7 +9,6 @@ use SprykerEco\Zed\Payone\PayoneConfig;
 
 class OrderManager extends SprykerEcoOrderManager
 {
-
     /**
      * @var \SprykerEco\Zed\Payone\PayoneConfig
      */
@@ -42,6 +41,4 @@ class OrderManager extends SprykerEcoOrderManager
 
         return $payment;
     }
-
-
 }
