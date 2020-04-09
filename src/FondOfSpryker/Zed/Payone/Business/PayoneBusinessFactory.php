@@ -16,8 +16,6 @@ class PayoneBusinessFactory extends SprykerEcoPayoneBusinessFactory
      */
     public function createOrderManager(): OrderManagerInterface
     {
-        $orderManager = new OrderManager($this->getConfig());
-
-        return $orderManager;
+        return new OrderManager($this->getConfig(), $this->getEntityManager());
     }
 }
