@@ -22,8 +22,7 @@ class OrderManager extends SprykerEcoOrderManager
     public function __construct(
         PayoneConfig $config,
         PayoneEntityManagerInterface $payoneEntityManager
-    )
-    {
+    ) {
         parent::__construct($config, $payoneEntityManager);
         $this->config = $config;
     }
