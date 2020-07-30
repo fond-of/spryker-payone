@@ -2,6 +2,7 @@
 
 namespace FondOfSpryker\Yves\Payone;
 
+use FondOfSpryker\Yves\Payone\Form\CreditCardSubForm;
 use FondOfSpryker\Yves\Payone\Form\DataProvider\CreditCardDataProvider;
 use FondOfSpryker\Yves\Payone\Form\DataProvider\EWalletDataProvider;
 use SprykerEco\Yves\Payone\PayoneFactory as SprykerEcoPayoneFactory;
@@ -22,5 +23,13 @@ class PayoneFactory extends SprykerEcoPayoneFactory
     public function createEWalletSubFormDataProvider(): EWalletDataProvider
     {
         return new EWalletDataProvider();
+    }
+
+    /**
+     * @return \FondOfSpryker\Yves\Payone\Form\CreditCardSubForm|\SprykerEco\Yves\Payone\Form\CreditCardSubForm
+     */
+    public function createCreditCardSubForm()
+    {
+        return new CreditCardSubForm();
     }
 }
